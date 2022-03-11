@@ -39,7 +39,7 @@
 
                 <div class="card">
                     <h2>Total</h2>
-                    <p>R$ 6.000,00</p>
+                    <p>R$ 60.000,00</p>
                 </div>
             </section>
         </Main>
