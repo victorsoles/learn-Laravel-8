@@ -11,10 +11,13 @@
 @foreach ($posts as $post)
     <h2>
         {{ $post->titulo }}
-        [ <a href="{{ route('posts.show', $post->id) }}">Ver</a> ]
+        [
+            <a href="{{ route('posts.show', $post->id) }}">Ver</a> |
+            <a href="{{ route('posts.edit', $post->id )}}">Edit</a>
+        ]
     </h2>
-    {{-- <h3>{{ $post->subtitulo }}</h3>
-    <p> {{ $post->conteudo }}</p> --}}
-
-
 @endforeach
+
+<hr>
+
+{{ $posts->links() }}
