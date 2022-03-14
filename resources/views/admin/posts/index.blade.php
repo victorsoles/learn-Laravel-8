@@ -1,3 +1,9 @@
+@extends('admin.layouts.app')
+
+@section('title', 'Listagem dos Posts')
+
+@section('content')
+
 @if (session('message'))
     <div>
         {{ session('message') }}
@@ -33,3 +39,6 @@
     {{ $posts->links() }}
 @endif
 
+
+
+@endsection
