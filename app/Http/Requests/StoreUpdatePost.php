@@ -26,7 +26,8 @@ class StoreUpdatePost extends FormRequest
         return [
             'titulo'    => 'required| min:3| max:160',
             'subtitulo' => 'required| min:4| max:200',
-            'conteudo'  => 'required| min:5| max:255',
+            'conteudo'  => 'nullable| min:5| max:255',
+            'imagem'    => 'required| image',
         ];
     }
 }
